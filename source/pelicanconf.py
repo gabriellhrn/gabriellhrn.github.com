@@ -3,9 +3,9 @@
 
 AUTHOR = u'gabriell'
 SITENAME = u'gabriell nascimento'
-SITEURL = ''
+SITEURL = 'http://gabriellhrn.github.com'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/Sao_Paulo'
 
 DEFAULT_LANG = u'pt'
 
@@ -19,12 +19,13 @@ SOCIAL = ()
 
 DEFAULT_PAGINATION = False
 
-ARTICLE_URL = '{lang}/{date:%Y}/{date:%m}/{slug}.html'
-ARTICLE_LANG_URL = '{lang}/{date:%Y}/{date:%m}/{slug}.html'
-PAGE_URL = 'pages/{lang}/{date:%Y}/{date:%m}/{slug}.html'
-PAGE_LANG_URL = 'pages/{lang}/{date:%Y}/{date:%m}/pages/{slug}.html'
-ARTICLE_SAVE_AS = '{lang}/{date:%Y}/{date:%m}/{slug}.html'
-ARTICLE_LANG_SAVE_AS = '{lang}/{date:%Y}/{date:%m}/{slug}.html'
-PAGE_SAVE_AS = 'pages/{lang}/{date:%Y}/{date:%m}/{slug}.html'
-PAGE_LANG_SAVE_AS = 'pages/{lang}/{date:%Y}/{date:%m}/{slug}.html'
+PERMALINK_STRUCTURE = '{lang}/{date:%Y}/{date:%m}'
+ARTICLE_URL = '%s/{slug}.html' % PERMALINK_STRUCTURE
+ARTICLE_LANG_URL = '%s/{slug}.html' % PERMALINK_STRUCTURE
+PAGE_URL = 'pages/%s/{slug}.html' % PERMALINK_STRUCTURE
+PAGE_LANG_URL = 'pages/%s/pages/{slug}.html' % PERMALINK_STRUCTURE
+ARTICLE_SAVE_AS = '%s/{slug}.html' % PERMALINK_STRUCTURE
+ARTICLE_LANG_SAVE_AS = '%s/{slug}.html' % PERMALINK_STRUCTURE
+PAGE_SAVE_AS = 'pages/%s/{slug}.html' % PERMALINK_STRUCTURE
+PAGE_LANG_SAVE_AS = 'pages/%s/{slug}.html' % PERMALINK_STRUCTURE
 
