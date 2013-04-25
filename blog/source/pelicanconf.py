@@ -19,7 +19,7 @@ SOCIAL = ()
 
 DEFAULT_PAGINATION = False
 
-PERMALINK_STRUCTURE = 'blog/{date:%Y}/{date:%m}'
+PERMALINK_STRUCTURE = '{date:%Y}/{date:%m}'
 ARTICLE_URL = '%s/{slug}.html' % PERMALINK_STRUCTURE
 ARTICLE_LANG_URL = '%s/{slug}.html' % PERMALINK_STRUCTURE
 PAGE_URL = 'pages/%s/{slug}.html' % PERMALINK_STRUCTURE
